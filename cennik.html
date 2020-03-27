@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Karolinka</title> <link rel="icon" href="img/logoK.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_jQuery.css">
+
+    
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.3.1.js"></script>
+
+</head>
+
+<body>
+    <script> setTimeout(() => { $('html, body').animate({
+        scrollTop: $("h1").offset().top-95
+    }, 2000);; }, 500);</script>
+<!-- <div id="wstep"><div id='w_zdj'><img src="out2.gif"></div>  </div> -->
+<header>
+
+    <nav>
+
+          <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+          </div>
+
+          <div class="logo">
+                K <div class="inna_czcionka">Hotel Karolinka </div>
+          </div>
+          
+          <div class="menu">
+                <ul>
+                      <li><a id="o_nas" href="o_nas.html">O nas</a></li>
+                      <li><a href="oferta.html">Oferta</a></li>
+                      <li><a href="cennik.html">Cennik</a></li>
+                      <li><a href="galeria.html">Galeria</a></li>
+                      <li><a href="kontakt.html">Kontakt</a></li>
+
+                </ul>
+          </div>
+    </nav>
+
+</header>
+    <div id="box">
+        <div id="naglowek">
+
+            <img id="k2" class="k" src="img/k2.jpg">
+            <img id="k1" class="k" src="img/k3.jpg">
+            <img id="k3" class="k" src="img/k1.jpg" />
+            <!-- <div id="n_text">Hotel Karolinka </div> -->
+            <!-- <div id="o_text">Jedyny hotel na ziemi w którym możesz prawdziwie odpocząć i wypocząć</div> -->
+
+
+
+        </div>
+        <!-- <div id="menu">
+            <div class="m_box">O nas</div>
+            <div class="m_box">Galeria</div>
+            <div class="m_box">Oferta</div>
+            <div class="m_box">Pokoje</div>
+            <div class="m_box">Kontakt</div>
+
+
+        </div> -->
+        <div id="content_komputer">
+            <h1>Cennik</h1>
+            <!-- <div class='zim_let'><h3>Zimowy &nbsp &nbsp&nbsp Letni</h3></div> -->
+            <!-- <div class="lewo"><img id="l" src="img/lato.jpg"></div><div class="prawo">PRAWO</div> -->
+            <div class="zm"><div class="lato_opis">Cennik Letni
+            </div>
+           
+              <img class="l" onclick="location.href='letni.html';"  src="img/pol_lato2.png">
+            
+        
+                <div class="zima_opis">Cennik Letni <img src="img/lato_ico.png"></div>
+                <img class="z" onclick="location.href='zimowy.html';"  src="img/pol_zima2.png">
+                <div class=" po">Cennik Zimowy<img src="img/winter_ico.png">
+                </div>
+                <img class="lp"  src="img/pol_lato2.png">
+            
+                <!-- <img id="l" src="img/lato.jpg"> -->
+            </div>
+
+
+       
+
+
+        </div>
+
+        <div class="content_telefon">
+            <h1>Cennik</h1>
+           <a href="letni.html"> <h3>Cennik Letni</h3>
+           <div class='naklatka'> <img  src="img/lato_ico.png"></div><img src="img/lato_min.jpg">
+
+        </a>
+          <a href="zimowy.html"> <h3>Cennik Zimowy</h3>
+            <img src="img/zima_min.png"></a>
+
+
+        </div>
+       
+
+</div>
+      
+</div>
+
+    
+    </div>
+        <footer><br>&copy Copyright  Daiwd Linek <br>Praca na witryny</footer>
+        </div>
+        <script type="text/javascript">
+
+            // Menu-toggle button
+      
+            $(document).ready(function() {
+                  $(".menu-icon").on("click", function() {
+                        $("nav ul").toggleClass("showing");
+                  });
+            });
+            $(document).ready(function() {
+                  $("#o_nas").on("click", function() {
+                        $("nav ul").toggleClass("showing");
+                  });
+            });
+            // Scrolling Effect
+      
+            // $(window).on("scroll", function() {
+            //       if($(window).scrollTop()) {
+            //             $('nav').addClass('black');
+            //       }
+      
+            //       else {
+            //             $('nav').removeClass('black');
+            //       }
+            // })
+      
+            var num = 200;      $(".logo").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".k").offset().top-95
+    }, 2000);
+});
+      
+      
+      
+      $(window).bind('scroll', function () {
+          if ($(window).scrollTop() > num) {
+            $('nav').addClass('black');
+          } else {
+            $('nav').removeClass('black');
+          }
+      });
+
+
+      $("#o_nas").click(function() {
+    $('html, body').animate({
+        scrollTop: $("h1").offset().top-95
+    }, 2000);
+});
+      
+      
+            </script>
+    </body>
+</html>

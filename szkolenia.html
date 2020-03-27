@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Karolinka</title> <link rel="icon" href="img/logoK.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_jQuery.css">
+
+    
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.3.1.js"></script>
+
+</head>
+
+<body>
+<script> setTimeout(() => { $('html, body').animate({
+    scrollTop: $("h1").offset().top-95
+}, 2000);; }, 500);</script>
+<!-- <div id="wstep"><div id='w_zdj'><img src="out2.gif"></div>  </div> -->
+<header>
+
+    <nav>
+
+          <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+          </div>
+
+          <div class="logo">
+                K <div class="inna_czcionka">Karolinka</div>
+          </div>
+          
+          <div class="menu">
+                <ul>
+                      <li><a id="o_nas" href="o_nas.html">O nas</a></li>
+                      <li><a href="oferta.html">Oferta</a></li>
+                      <li><a href="cennik.html">Cennik</a></li>
+                      <li><a href="galeria.html">Galeria</a></li>
+                      <li><a href="kontakt.html">Kontakt</a></li>
+
+                </ul>
+          </div>
+    </nav>
+
+</header>
+    <div id="box">
+        <div id="naglowek">
+
+            <img id="k2" class="k" src="img/k2.jpg">
+            <img id="k1" class="k" src="img/k3.jpg">
+            <img id="k3" class="k" src="img/k1.jpg" />
+            <!-- <div id="n_text">Hotel Karolinka </div> -->
+            <!-- <div id="o_text">Jedyny hotel na ziemi w którym możesz prawdziwie odpocząć i wypocząć</div> -->
+
+
+
+        </div>
+        <!-- <div id="menu">
+            <div class="m_box">O nas</div>
+            <div class="m_box">Galeria</div>
+            <div class="m_box">Oferta</div>
+            <div class="m_box">Pokoje</div>
+            <div class="m_box">Kontakt</div>
+
+
+        </div> -->
+        <div id="content">
+            <h1>Sale konferencyjne</h1>
+            <div class="c_box">
+                <div class="boki"></div>
+                <div class="text">
+                    <h2>Szkolenia</h2>
+                    Dbamy nie tylko o przyjemną atmosferę podczas szkoleń i konferencji ale poprzez różnorodne i profesjonalne wyposażenie umożliwiamy prowadzenie zajęć na najwyższym poziomie.
+                  
+                    
+                </div>
+                <div class="zdjecie">
+                    <img src="img/s1.jpg">
+                </div>
+                <div class="boki"></div>
+
+        </div>
+        <div class="c_box">
+            <div class="boki"></div>
+          <div class="zdjecie g h">
+              <img src="img/s2.jpg">
+          </div>
+
+          
+        <div class="text">
+
+           <h2>Wyposarzenie</h2>
+           Poza specjalistycznym sprzętem oddajemy również do Państwa dyspozycji
+           3 wygodne i klimatyzowane sale konferencyjne. Ich wielość i różnorodność umożliwia prowadzenie spotkań warsztatowych w grupach.
+          </div>
+          <div class="zdjecie d ">
+            <img src="img/s2.jpg">
+        </div>
+        <div class="boki"></div>
+
+  </div>
+ 
+  <div class="c_box">
+<div class="boki"></div>
+    <div class="text">
+
+       
+   <h2>Położenie</h2>
+   Sale konferencyjne są w przeważającej większości usytuowane na poziomie 3 i sąsiadują ze sobą. Prowadzą do nich przestronne korytarze, które podobnie jak przestronne hole – w miarę potrzeby mogą służyć swobodnie jako powierzchnie wystawiennicze.
+
+      </div>
+      <div class="zdjecie">
+          <img src="img/s3.jpg">
+      </div>
+      <div class="boki"></div>
+</div>
+</div>
+    
+    </div>
+        <footer><br>&copy Copyright  Daiwd Linek <br>Praca na witryny</footer>
+        </div>
+        <script type="text/javascript">
+
+            // Menu-toggle button
+      
+            $(document).ready(function() {
+                  $(".menu-icon").on("click", function() {
+                        $("nav ul").toggleClass("showing");
+                  });
+            });
+            $(document).ready(function() {
+                  $("#o_nas").on("click", function() {
+                        $("nav ul").toggleClass("showing");
+                  });
+            });
+            // Scrolling Effect
+      
+            // $(window).on("scroll", function() {
+            //       if($(window).scrollTop()) {
+            //             $('nav').addClass('black');
+            //       }
+      
+            //       else {
+            //             $('nav').removeClass('black');
+            //       }
+            // })
+      
+            var num = 200;      $(".logo").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".k").offset().top-95
+    }, 2000);
+});
+      
+      
+      
+      $(window).bind('scroll', function () {
+          if ($(window).scrollTop() > num) {
+            $('nav').addClass('black');
+          } else {
+            $('nav').removeClass('black');
+          }
+      });
+
+
+      $("#o_nas").click(function() {
+    $('html, body').animate({
+        scrollTop: $("h1").offset().top-95
+    }, 2000);
+});
+      
+      
+            </script>
+    </body>
+</html>
